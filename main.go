@@ -14,7 +14,7 @@ var ctx = context.Background()
 func main() {
 	var connectionUrl = flag.String("c", "localhost:6379", "redis connection string")
 	var redisPassword = flag.String("P", "", "redis connection password (optional)")
-	var keyPrefix = flag.String("key-prefix", "", "key prefix to search (if not mention, then all keys)")
+	var keyPrefix = flag.String("key-prefix", "", "key prefix to search (if not mentioned, then all keys)")
 	var retainDaysMin = flag.Int("retain-days-min", 15, "keys to be retained with ttl less than this value")
 	var retainDaysMax = flag.Int("retain-days-max", 450, "keys to be retained with ttl more than this value")
 
